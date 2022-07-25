@@ -4,7 +4,7 @@ const validarEtapa = require('./validar-etapa');
 const palavraSecreta = 'abacaxi';
 const jogoForca = new Forca(palavraSecreta);
 
-const palavraEsperada = 'abacaxi';
+const palavraEsperada = '_______';
 const estadoEsperado = 'aguardando chute'
 
 let estadosEstaoCorretos = validarEtapa(6, palavraEsperada, '', estadoEsperado, jogoForca);
