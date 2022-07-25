@@ -56,7 +56,7 @@ class Forca {
     if (this.vidasRestantes <= 0)
       return "perdeu";
 
-    if (this.letrasChutadas == this.letrasCertas){
+    if (this.letrasAcertadas == this.palavraVdd.length){
       return "ganhou";
     }
 
