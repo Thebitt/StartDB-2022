@@ -8,6 +8,7 @@ class Forca {
     this.letrasCertas = [];
     this.letrasCertas = this.defineLetras(palavra);
     this.palavraInterna = palavra;
+    this.letrasAcertadas = 0;
   }
 
   defineLetras(palavra){
@@ -49,6 +50,7 @@ class Forca {
       //const letraSubstituida = this.palavraInterna.substring(posicao, posicao + 1);
       this.palavraInterna = this.palavraInterna.replace(letra, "_");
       this.letrasCertas[posicao] = letra;
+      this.letrasAcertadas++;
     }
   }
 
